@@ -8,6 +8,10 @@
 
 body {
     font-family: "Space Mono", sans-serif;
+    @font-face {
+        font-family: "Space Mono";
+        src: url(https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap) format("truetype");
+    }
     margin: 0;
     padding: 0;
     background: radial-gradient(circle at center, var(--penguini_purple), var(--penguini_black));
