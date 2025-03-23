@@ -62,21 +62,37 @@ header {
     padding: 10px 20px;
 }
 
+
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 1.5vw;
 }
 
 nav ul li a {
     color: var(--penguini_white);
     text-decoration: none;
-    padding: -5%;
+    padding: 0.75rem;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
     transition: text-shadow 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 2vw;
+    }
+
+    header {
+        padding: 0.8vh 1.5vw;
+    }
 }
 
 nav ul li a:hover {
