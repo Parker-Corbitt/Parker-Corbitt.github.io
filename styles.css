@@ -42,6 +42,11 @@
     }
 }
 
+html {
+    background: var(--penguini_black);
+    height: 100%;
+}
+
 body {
     font-family: "Space Mono", sans-serif;
     margin: 0;
