@@ -75,6 +75,7 @@ nav ul li {
 nav ul li a {
     color: var(--penguini_white);
     text-decoration: none;
+    padding: -5%;
     transition: text-shadow 0.3s ease-in-out;
 }
 
