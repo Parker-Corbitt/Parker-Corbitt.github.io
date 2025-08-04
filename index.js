@@ -38,8 +38,4 @@ document.addEventListener("DOMContentLoaded", function () {
         projectList.appendChild(pCard); // Append the new card to the project list
     });
 });
-document.addEventListener("mousemove", function (e) {
-    var x = e.clientX;
-    var y = e.clientY;
-    document.body.style.background = "radial-gradient(circle at ".concat(x, "px ").concat(y, "px, var(--penguini_purple), var(--penguini_black))");
-});
+
