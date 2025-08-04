@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -8,53 +9,101 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<header>
-    <nav id="nav_pill">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 
-<section id="about">
-    <h1>About Me</h1>
-    <p>Welcome to my portfolio! I am a graduate student.</p>
-</section>
-
-<section id="projects">
-    <h1>Projects</h1>
-    <div id="project-list"></div>
-</section>
-
-<section id="research">
-    <h1>Research</h1>
-</section>
-
-<section id="contact">
-    <h1>Contact</h1>
-    <!-- From Uiverse.io by omriluz -->
-    <div class="form-container">
-        <form class="form" action="https://formspree.io/f/mzzerqdz"
-              method="POST">
-            <div class="form-group">
-                <label for="email">Your Email</label>
-                <input required="" name="email" id="email" type="text">
-            </div>
-            <div class="form-group">
-                <label for="textarea">How Can I Help You?</label>
-                <textarea required="" cols="50" rows="10" id="textarea" name="textarea"></textarea>
-            </div>
-            <button type="submit" class="form-submit-btn">Submit</button>
-        </form>
+    <!-- Floating Glassy Navbar -->
+    <div class="glassy-navbar">
+        <nav>
+            <ul>
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-</section>
 
-<script src="index.js"></script>
+    <!-- Landing Section -->
+    <section id="landing" class="landing-section">
+        <div class="landing-photo">
+            <img src="tux.JPG" alt="Your Photo">
+        </div>
+        <div class="landing-blurb">
+            <h1 style="color: var(--penguini_white);">Hi, I'm Parker</h1>
+            <p>Welcome to my portfolio! I'm a graduate student passionate about research, technology, and creative
+                projects. Explore my work and connect with me below.</p>
+        </div>
+        <div class="landing-social">
+            <div class="social-card">
+                <h2>Social Links</h2>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 style="color: var(--penguini_white); text-align:center;">Projects</h1>
+        <div class="projects-section">
+            <!-- Example Project Card -->
+            <div class="project-card">
+                <div class="project-title">Project Title</div>
+                <div class="project-type">Type: Coding</div>
+                <div class="project-description">Short description of the project goes here. You can add more cards for
+                    other types of projects.</div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">Art Portfolio</div>
+                <div class="project-type">Type: Art</div>
+                <div class="project-description">A showcase of my creative works and visual projects.</div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">Community Event</div>
+                <div class="project-type">Type: Outreach</div>
+                <div class="project-description">Details about a community event or outreach project.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Log Section -->
+    <section id="research">
+        <div class="research-section">
+            <div class="research-title">Research Log</div>
+            <div class="research-log">
+                <div class="research-entry">
+                    <div class="research-date">Aug 3, 2025</div>
+                    <div>Started a new project on machine learning interpretability.</div>
+                </div>
+                <div class="research-entry">
+                    <div class="research-date">Jul 28, 2025</div>
+                    <div>Read a paper on neural network pruning and its applications.</div>
+                </div>
+                <!-- Add more entries as you learn! -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Glassy Contact Form Section -->
+    <section id="contact">
+        <h1 style="color: var(--penguini_white); text-align:center;">Contact</h1>
+        <div class="glassy-contact-form">
+            <form action="https://formspree.io/f/mzzerqdz" method="POST">
+                <input required name="email" id="email" type="email" placeholder="Your Email">
+                <textarea required cols="50" rows="6" id="textarea" name="textarea"
+                    placeholder="How Can I Help You?"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
