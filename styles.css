@@ -445,7 +445,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     transition: box-shadow 0.2s;
     overflow: hidden;
 }
@@ -634,7 +635,7 @@ body {
     background: rgba(254, 239, 221, 0.25);
     border-radius: 12px;
     padding: 12px 18px;
-    color: var(--penguini_black);
+    color: var(--penguini_cream);
     font-size: 1rem;
     box-shadow: 0 1px 8px rgba(6, 54, 22, 0.08);
 }
@@ -662,7 +663,7 @@ body {
 .glassy-contact-form input,
 .glassy-contact-form textarea {
     background: rgba(254, 239, 221, 0.18);
-    color: var(--penguini_black);
+    color: var(--penguini_cream);
     border: 1px solid var(--penguini_green);
     border-radius: 8px;
     padding: 12px 16px;
@@ -708,7 +709,7 @@ body {
 .glassy-contact-form input,
 .glassy-contact-form textarea {
     background: rgba(254, 239, 221, 0.18);
-    color: var(--penguini_black);
+    color: var(--penguini_cream);
     border: 1px solid var(--penguini_purple);
     border-radius: 8px;
     padding: 12px 16px;
@@ -1029,11 +1030,11 @@ section {
     justify-content: center;
     align-self: center;
     font-family: inherit;
-    color: #717171;
+    color: var(--penguini_cream);
     font-weight: 600;
     width: 40%;
-    background: #313131;
-    border: 1px solid #414141;
+    background: var(--penguini_green);
+    border: 1px solid var(--penguini_green);
     padding: 12px 16px;
     font-size: inherit;
     gap: 8px;
@@ -1044,6 +1045,6 @@ section {
 }
 
 .form-container .form-submit-btn:hover {
-    background-color: inherit;
-    border-color: #e81cff;
+    background-color: var(--penguini_orange);
+    border-color: var(--penguini_orange);
 }
