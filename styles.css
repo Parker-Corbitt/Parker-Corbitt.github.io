@@ -612,9 +612,8 @@ body {
 /* Research Log Section */
 .research-section {
     margin: 48px auto;
-    width: 80vw;
-    max-width: 900px;
-    box-shadow: 0 2px 16px rgba(6, 54, 22, 0.10);
+    width: 90vw;
+    max-width: 1200px;
     padding: 32px 24px;
     color: var(--penguini_black);
 }
@@ -624,6 +623,7 @@ body {
     font-weight: 700;
     color: var(--penguini_cream);
     margin-bottom: 18px;
+    text-align: center;
 }
 
 .research-log {
@@ -633,12 +633,19 @@ body {
 }
 
 .research-entry {
-    background: rgba(254, 239, 221, 0.25);
-    border-radius: 12px;
-    padding: 12px 18px;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border-radius: 18px;
+    border: var(--glass-border);
+    box-shadow: 0 2px 16px rgba(6, 54, 22, 0.10);
+    padding: 24px 18px;
     color: var(--penguini_cream);
     font-size: 1rem;
-    box-shadow: 0 1px 8px rgba(6, 54, 22, 0.08);
+    transition: box-shadow 0.2s;
+}
+
+.research-entry:hover {
+    box-shadow: 0 4px 32px rgba(6, 54, 22, 0.15);
 }
 
 .research-date {
